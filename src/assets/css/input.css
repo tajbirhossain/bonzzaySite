@@ -23,3 +23,52 @@
     line-clamp: 2;
     -webkit-box-orient: vertical;
 }
+
+.limitText3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+
+.blogCategoryMenu li.active a {
+    background-color: rgba(120, 67, 255, 0.1);
+    color: #7843FF;
+    border: 1px solid #7843FF;
+}
+
+
+
+
+.bannerHeadingTextAnim {
+    background: linear-gradient(45deg, #ff341e, #fff, #5743ff, #ff341e);
+    background-size: 300% 300%;
+    background-clip: text;
+    color: transparent;
+    animation: gradientAnimation 8s linear infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    25% {
+        background-position: 100% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    75% {
+        background-position: 0% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+
+}

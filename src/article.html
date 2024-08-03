@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/output.css">
+</head>
+
+<body class="font-jet">
+    <header class="flex items-center justify-between px-4 py-[14.5px] sticky top-0 left-0 z-10 bg-[#F9F9FF]">
+        <img src="assets/images/logo.svg" alt="">
+        <ul class="flex items-center">
+            <li class="mx-4">
+                <a href="#" class="flex items-center">Products <img src="assets/images/arrow-down-red.svg" alt=""
+                        class="ml-1"></a>
+            </li>
+            <li class="mx-4">
+                <a href="#">Success Stories</a>
+            </li>
+            <li class="mx-4">
+                <a href="#">Resources</a>
+            </li>
+            <li class="mx-4">
+                <a href="#">Pricing</a>
+            </li>
+            <li class="mx-4">
+                <a href="#">FAQ</a>
+            </li>
+        </ul>
+        <div class="flex items-center">
+            <div class="headerLangWrap mr-6">
+                <div class="flex items-center cursor-pointer">
+                    <img src="assets/images/eng-flag.svg" alt="" class="mr-1">
+                    <p class="mr-1">EN</p>
+                    <img src="assets/images/arrow-down-red.svg" alt="">
+                </div>
+            </div>
+            <button class="w-[152px] h-11 rounded-lg bg-[#7843FF] flex items-center justify-center text-white">Get in
+                Touch <img src="assets/images/arrow-up-white.svg" alt="" class="ml-2"></button>
+        </div>
+    </header>
+
+    <section class="w-[calc(100%-32px)] bg-[#09110A] py-[86px] px-20 overflow-hidden relative mx-auto mb-3 rounded-2xl">
+        <img src="assets/images/product-hero-linear-dot.svg" alt=""
+            class="min-h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover">
+        <img src="assets/images/article-page-hero-img.png" alt="" class="absolute right-0 bottom-0">
+        <img src="assets/images/purple-gradient-less-opacity.svg" alt=""
+            class="min-h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover">
+
+        <div class="w-[60%] relative">
+            <div class="font-clash text-white text-sm mb-3">
+                <span>Home</span>
+                <span class="mx-1.5">·</span>
+                <span>Blog</span>
+                <span class="mx-1.5">·</span>
+                <span class="opacity-40">How to Use JWT and Node.js for Better App Security</span>
+            </div>
+            <h1 class="text-[94px] text-white font-clash mb-8 leading-[90%]">
+                How to Use JWT and Node.js for Better App Security
+            </h1>
+            <div class="flex items-center text-xs text-white">
+                <span>June 26, 2023</span>
+                <div class="w-1.5 h-1.5 rounded-full bg-white opacity-40 mx-3"></div>
+                <span>By <span class="underline">Mark Davis</span></span>
+                <div class="w-1.5 h-1.5 rounded-full bg-white opacity-40 mx-3"></div>
+                <span>8 mins</span>
+                <div class="w-1.5 h-1.5 rounded-full bg-white opacity-40 mx-3"></div>
+                <div class="flex items-center">
+                    <img src="assets/images/arrow-down-green.svg" alt="">
+                    <span class="text-sm text-[#0AC655] ml-1">Mobile</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="p-20 flex justify-between">
+        <div class="w-[calc(30%-24px)] font-clash">
+            <div class="w-full mb-12 bg-[#F9F9FF] rounded-2xl">
+                <div class="p-6 pb-4 border-b-[1px] border-b-[rgba(120,67,255,0.1)]">
+                    <h3 class="text-xl text-[#09110A]">Table of Contents</h3>
+                </div>
+                <div class="py-4 px-6 border-b-[1px] border-b-[rgba(120,67,255,0.1)]">
+                    <h3 class="text-[#7843FF] mb-2.5">Primary Aspects</h3>
+                    <ul class="text-[#09110A]">
+                        <li class="mb-2.5">Header</li>
+                        <li class="mb-2.5">Signature</li>
+                        <li class="mb-2.5">JWT Security Best Practices</li>
+                        <li class="mb-2.5">Common JWT Use Cases</li>
+                        <li class="mb-2.5">Setting Up In-memory Storage</li>
+                        <li class="mb-2.5">Prompt Engineering Strategies That Deliver Ideal Responses</li>
+                        <li class="mb-2.5">Optimizing Generative AI Tool Use</li>
+                        <li class="mb-2.5">Directives</li>
+                        <li class="mb-2.5">Instructions</li>
+                    </ul>
+                </div>
+                <div class="flex items-center justify-center flex-wrap p-6 py-4">
+                    <a href="#"
+                        class="size-11 rounded-lg border-[1px] border-[rgba(120,67,255,0.2)] flex items-center justify-center m-1.5">
+                        <img src="assets/images/copy-link-purple.svg" alt="">
+                    </a>
+                    <a href="#"
+                        class="size-11 rounded-lg border-[1px] border-[rgba(120,67,255,0.2)] flex items-center justify-center m-1.5">
+                        <img src="assets/images/linkedin-purple.svg" alt="">
+                    </a>
+                    <a href="#"
+                        class="size-11 rounded-lg border-[1px] border-[rgba(120,67,255,0.2)] flex items-center justify-center m-1.5">
+                        <img src="assets/images/twitter-purple.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="w-full rounded-xl bg-[#7843FF] p-6 relative overflow-hidden">
+                <img src="assets/images/grid-gray-small.svg" alt="" class="w-full absolute bottom-0 left-0">
+
+                <div class="relative">
+                    <h3 class="text-2xl text-white mb-6">Subscribe Now</h3>
+                    <input type="text" placeholder="maria.smith@company.com"
+                        class="w-full rounded-lg bg-[rgba(249,249,255,0.1)] border-[1px] border-[rgb(255,255,255,0.2)] py-[11px] pl-4 pr-2 text-white placeholder:text-[rgba(255,255,255,0.6)] placeholder:font-jet mb-3 backdrop-blur-[20px]">
+                    <button
+                        class="w-full h-[44px] flex items-center justify-center text-base bg-[#F95341] rounded-lg text-white font-jet">
+                        <span>Subcribe</span>
+                        <img src="assets/images/arrow-up-white.svg" alt="" class="ml-2">
+                    </button>
+                </div>
+
+                <img src="assets/images/paper-plane.svg" alt="" class="w-[66px] absolute top-6 right-6">
+            </div>
+        </div>
+
+        <div class="w-[calc(70%-24px)] font-clash">
+            <p class="text-2xl mb-16">
+                In today's digital landscape, securing applications is paramount. One effective method involves using
+                JSON Web Tokens (JWT) with Node.js. This guide will walk you through the basics of JWT, its structure,
+                and how to implement it in your Node.js applications.
+            </p>
+            <div class="mb-16">
+                <div class="mb-6">
+                    <h3 class="text-[44px] leading-[110%]">Primary Aspects</h3>
+                </div>
+                <div class="flex justify-between flex-wrap">
+                    <div class="w-[calc(50%-8px)] p-6 bg-[rgba(10,198,85,0.05)] rounded-2xl mb-4">
+                        <img src="assets/images/green-tick.svg" alt="" class="block mb-[34px]">
+                        <p>
+                            Explains JSON Web Tokens (JWT) and their use for secure information exchange.
+                        </p>
+                    </div>
+                    <div class="w-[calc(50%-8px)] p-6 bg-[rgba(10,198,85,0.05)] rounded-2xl mb-4">
+                        <img src="assets/images/green-tick.svg" alt="" class="block mb-[34px]">
+                        <p>
+                            Explains JSON Web Tokens (JWT) and their use for secure information exchange.
+                        </p>
+                    </div>
+                    <div class="w-[calc(50%-8px)] p-6 bg-[rgba(10,198,85,0.05)] rounded-2xl mb-4">
+                        <img src="assets/images/green-tick.svg" alt="" class="block mb-[34px]">
+                        <p>
+                            Describes the components of JWT, including the header, payload, and signature.
+                        </p>
+                    </div>
+                    <div class="w-[calc(50%-8px)] p-6 bg-[rgba(10,198,85,0.05)] rounded-2xl mb-4">
+                        <img src="assets/images/green-tick.svg" alt="" class="block mb-[34px]">
+                        <p>
+                            Provides a step-by-step guide on integrating JWT for authentication in a Node.js
+                            application.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-16">
+                <div class="mb-6">
+                    <h3 class="text-[44px] leading-[110%] mb-4">Header</h3>
+                    <p class="text-lg">
+                        We define JWT’s header using the <span class="text-[#F95341] underline">JOSE standard</span> to
+                        specify the token’s type and cryptographic information. The required name-value pairs are:
+                    </p>
+                </div>
+                <div class="rounded-2xl border-[1px] border-[rgba(120,67,255,0.1)] overflow-hidden">
+                    <div class="flex bg-[#F9F9FF] text-lg text-[#7843FF]">
+                        <div class="w-[38%] py-4 px-5">
+                            <span>Name</span>
+                        </div>
+                        <div class="w-[62%] py-4 px-5">
+                            <span>Value Description</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex border-b-[1px] border-b-[rgba(120,67,255,0.1)]">
+                            <div
+                                class="w-[38%] py-4 px-5 text-[#F95341] border-r-[1px] border-r-[rgba(120,67,255,0.1)]">
+                                <span class="inline-block py-1 px-2 bg-[rgba(249,83,65,0.05)] rounded">work
+                                    smoothly</span>
+                            </div>
+                            <div class="w-[62%] py-4 px-5">
+                                <span>Content type ("JWT" in our case)</span>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div
+                                class="w-[38%] py-4 px-5 text-[#F95341] border-r-[1px] border-r-[rgba(120,67,255,0.1)]">
+                                <span class="inline-block py-1 px-2 bg-[rgba(249,83,65,0.05)] rounded">alg</span>
+                            </div>
+                            <div class="w-[62%] py-4 px-5">
+                                <span>Token-signing algorithm, chosen from the <span
+                                        class="text-[#F95341] underline">JSON Web Algorithms</span> (JWA) list</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-16">
+                <div class="mb-6">
+                    <h3 class="text-[44px] leading-[110%] mb-4">Signature</h3>
+                    <p class="text-lg">
+                        To securely implement JWT, a signature (i.e., JWS) is recommended for use by an intended token
+                        recipient. A signature is a simple, URL-safe, base64-encoded string that verifies a token’s
+                        authenticity.
+                        <br>
+                        <br>
+                        The signature function is dependent on the header-specified algorithm. The header and payload
+                        parts are both passed to the algorithm, as follows:
+                    </p>
+                </div>
+                <div class="bg-[#F9F9FF] rounded-lg py-[15px] px-5 mb-6">
+                    <p class="text-lg text-[#7843FF]">
+                        base64_url(fn_signature(base64_url(header)+base64_url(payload)))
+                    </p>
+                </div>
+                <p class="text-lg">
+                    Any party, including the recipient, may independently run this signature calculation to compare it
+                    to the JWT signature from within the token to see whether the signatures match.
+                    <br>
+                    <br>
+                    While a token with sensitive data should be encrypted, if our token does not contain sensitive data,
+                    it is acceptable to use JWS for nonencrypted and therefore public, yet encoded, payload claims. JWS
+                    allows our signature to contain information enabling our token’s recipient to determine if the token
+                    has been modified, and thus corrupted, by a third party.
+                </p>
+            </div>
+            <div class="mb-16">
+                <div class="mb-6">
+                    <h3 class="text-[44px] leading-[110%] mb-4">JWT Security Best Practices</h3>
+                    <p class="text-lg">
+                        To avoid common attack vectors, it is imperative to follow JWT best practices:
+                    </p>
+                </div>
+                <div class="rounded-2xl border-[1px] border-[rgba(120,67,255,0.1)] overflow-hidden">
+                    <div class="flex bg-[#F9F9FF] text-lg text-[#7843FF]">
+                        <div class="w-[38%] py-4 px-5">
+                            <span>Best Practice</span>
+                        </div>
+                        <div class="w-[62%] py-4 px-5">
+                            <span>Details</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex border-b-[1px] border-b-[rgba(120,67,255,0.1)]">
+                            <div class="w-[38%] py-4 px-5 border-r-[1px] border-r-[rgba(120,67,255,0.1)]">
+                                <span>Always perform algorithm validation.</span>
+                            </div>
+                            <div class="w-[62%] py-4 px-5">
+                                <span>
+                                    Trusting unsecured tokens leaves us vulnerable to attacks. Avoid trusting security
+                                    libraries to autodetect the JWT algorithm; instead, explicitly set the validation
+                                    code’s algorithm.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex border-b-[1px] border-b-[rgba(120,67,255,0.1)]">
+                            <div class="w-[38%] py-4 px-5 border-r-[1px] border-r-[rgba(120,67,255,0.1)]">
+                                <span>Select algorithms and validate cryptographic inputs.</span>
+                            </div>
+                            <div class="w-[62%] py-4 px-5">
+                                <span>
+                                    <span class="text-[#F95341] underline">JWA</span> defines a set of acceptable
+                                    algorithms and the required inputs for each. Shared
+                                    secrets for symmetric algorithms should be long, complex, random, and need not be
+                                    human friendly.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex border-b-[1px] border-b-[rgba(120,67,255,0.1)]">
+                            <div class="w-[38%] py-4 px-5 border-r-[1px] border-r-[rgba(120,67,255,0.1)]">
+                                <span>Validate all claims.</span>
+                            </div>
+                            <div class="w-[62%] py-4 px-5">
+                                <span>
+                                    Tokens should only be considered valid when both the signature and the contents are
+                                    valid. Tokens passed between parties should use a consistent set of claims.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="w-[38%] py-4 px-5 border-r-[1px] border-r-[rgba(120,67,255,0.1)]">
+                                <span>Rely on trusted JWT implementations.</span>
+                            </div>
+                            <div class="w-[62%] py-4 px-5">
+                                <span>
+                                    Avoid custom implementations. Use the most tested libraries and read a library’s
+                                    documentation to understand how it works.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-16">
+                <div class="mb-6">
+                    <h3 class="text-[44px] leading-[110%] mb-4">Common JWT Use Cases</h3>
+                    <p class="text-lg">
+                        With JWT’s structure and intent explained, let’s explore the reasons to use it. Though there is
+                        a broad spectrum of JWT use cases, we’ll focus on the most common scenarios.
+                    </p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-[32px] leading-[110%] mb-4">API Authentication</h3>
+                    <p class="text-lg">
+                        When a client authenticates with our API, a JWT is returned—this use case is common in
+                        e-commerce applications. The client then passes this token to each subsequent API call. The API
+                        layer will validate the authorization token, verifying that the call may proceed. Clients may
+                        access an API’s routes, services, and resources as appropriate for the authenticated client’s
+                        level.
+                    </p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-[32px] leading-[110%] mb-4">Federated Identity</h3>
+                    <p class="text-lg">
+                        JWT is commonly used within a federated identity ecosystem, in which users’ identities are
+                        linked across multiple separate systems, such as a third-party website that uses Gmail for its
+                        login. A <span class="text-[#F95341] underline">centralized authentication system</span> is
+                        responsible for validating a client’s identity and
+                        producing a JWT for use with any API or service connected to the federated identity.
+                        <br>
+                        <br>
+                        Whereas nonfederated API tokens are straightforward, federated identity systems typically work
+                        with two token types: access tokens and refresh tokens. An access token is short-lived; during
+                        its period of validity, an access token authorizes access to a protected resource. Refresh
+                        tokens are long-lived and allow a client to request new access tokens from authorization servers
+                        with no requirement that client credentials be re-entered.
+                    </p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-[32px] leading-[110%] mb-4">Stateless Sessions</h3>
+                    <p class="text-lg">
+                        Stateless session authentication is similar to API authentication, but with more information
+                        packed into a JWT and passed along to an API with each request. A stateless session mainly
+                        involves client-side data; for example, an e-commerce application that authenticates its
+                        shoppers and stores their shopping cart items might store them using a JWT.
+                        <br>
+                        <br>
+                        In this use case, the server avoids storing a per-user state, limiting its operations to using
+                        only the information passed to it. Having a stateless session on the server side involves
+                        storing more information on the client side, and thus requires the JWT to include information
+                        about the user’s interaction, such as a cart or the URL to which it will redirect. This is why a
+                        stateless session’s JWT includes more information than a comparable stateful session’s JWT.
+                    </p>
+                </div>
+                <div class="flex justify-between">
+                    <div class="w-[calc(50%-8px)] bg-[rgba(28,29,60,0.03)] rounded-2xl p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="assets/images/bulb-purple.svg" alt="" class="mr-2">
+                            <span class="text-xl">API Authentication</span>
+                        </div>
+                        <p class="text-sm">
+                            JWTs are used for secure API authentication, ensuring appropriate access with each client
+                            request.
+                        </p>
+                    </div>
+                    <div class="w-[calc(50%-8px)] bg-[rgba(28,29,60,0.03)] rounded-2xl p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="assets/images/bulb-purple.svg" alt="" class="mr-2">
+                            <span class="text-xl">Federated Identity</span>
+                        </div>
+                        <p class="text-sm">
+                            JWTs link user identities across platforms, using access and refresh tokens for seamless,
+                            secure authentication.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-16">
+                <div class="mb-6">
+                    <h3 class="text-[44px] leading-[110%] mb-4">Setting Up In-memory Storage</h3>
+                    <p class="text-lg">
+                        To avoid the complexities that come with a fully fledged database, we’ll store our data locally
+                        in the server state. Let’s create a TypeScript file, src/state/users.ts, to contain the storage
+                        and <span class="text-[#F95341] underline">CRUD operations</span> for API user information:
+                    </p>
+                </div>
+                <div class="mb-6">
+                    <img src="assets/images/article-image-1.png" alt="" class="w-full rounded-2xl mb-2">
+                    <span class="opacity-60">In-memory Storage</span>
+                </div>
+            </div>
+
+            <div class="mb-16">
+                <div class="mb-6">
+                    <h3 class="text-[44px] leading-[110%] mb-4">Prompt Engineering Strategies That Deliver Ideal
+                        Responses</h3>
+                    <p class="text-lg">
+                        The ways in which you prompt Gen AI tools can have a huge impact on the quality of the responses
+                        you receive. In fact, prompting holds so much influence that it has given rise to a
+                        subdiscipline dubbed prompt engineering, which describes the process of writing and refining
+                        prompts to generate high-quality outputs. In addition to being helped by context, AI also tends
+                        to generate more useful responses when given a clear scope and a description of the desired
+                        response, for example: “Give me a numbered list in order of importance.”
+                    </p>
+                </div>
+                <div class="mb-6">
+                    <ul>
+                        <li class="flex mb-4">
+                            <img src="assets/images/green-tick.svg" alt="" class="mr-4">
+                            <p>
+                                Industry-leading technology: Real-time inventory visibility, digital reporting, and a
+                                user-friendly platform for effortless management.
+                            </p>
+                        </li>
+                        <li class="flex mb-4">
+                            <img src="assets/images/green-tick.svg" alt="" class="mr-4">
+                            <p>
+                                Competitive pricing, premium service: Get competitive rates without compromising on
+                                quality or support.
+                            </p>
+                        </li>
+                        <li class="flex mb-4">
+                            <img src="assets/images/green-tick.svg" alt="" class="mr-4">
+                            <p>
+                                Flexible and scalable: Adapt to any product type, order volume, or seasonal surge with
+                                confidence.
+                            </p>
+                        </li>
+                        <li class="flex mb-4">
+                            <img src="assets/images/green-tick.svg" alt="" class="mr-4">
+                            <p>
+                                Performance transparency: Clear KPIs, SLAs, and benchmarking showcase our commitment to
+                                excellence.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mb-16">
+                <div class="mb-6">
+                    <h3 class="text-[44px] leading-[110%] mb-4">Optimizing Generative AI Tool Use</h3>
+                    <p class="text-lg">
+                        Gen AI can greatly boost developer productivity for coding, learning, and research tasks—but
+                        only if used correctly. Without enough context, ChatGPT is more likely to hallucinate
+                        nonsensical responses that almost look correct. In fact, research indicates that GPT 3.5’s
+                        responses to programming questions contain incorrect information a staggering <span
+                            class="text-[#F95341] underline">52% of the time</span>.
+                        And incorrect context can be worse than none at all: If presented a poor solution to a coding
+                        problem as a good example, ChatGPT will “trust” that input and generate subsequent responses
+                        based on that faulty foundation.
+                    </p>
+                </div>
+                <div class="flex justify-between">
+                    <img src="assets/images/article-image-2.png" alt="" class="w-[calc(50%-12px)] rounded-2xl">
+                    <img src="assets/images/article-image-3.png" alt="" class="w-[calc(50%-12px)] rounded-2xl">
+                </div>
+            </div>
+
+            <div class="mb-16">
+                <div class="mb-6">
+                    <h3 class="text-[44px] leading-[110%] mb-4">Directives</h3>
+                    <p class="text-lg">
+                        You are a code reviewing AI, designed to meticulously review and improve source code files. Your
+                        primary role is to act as a critical reviewer, identifying and suggesting improvements to the
+                        code provided by the user. Your expertise lies in enhancing the quality of a code file without
+                        changing its core functionality.
+                        <br>
+                        <br>
+                        In your interactions, you should maintain a professional and respectful tone. Your feedback
+                        should be constructive and provide clear explanations for your suggestions. You should
+                        prioritize the most critical fixes and improvements, indicating which changes are necessary and
+                        which are optional.
+                    </p>
+                </div>
+                <div class="pl-5 border-l-2 border-l-[#F95341]">
+                    <img src="assets/images/quote-light.svg" alt="" class="block mb-5">
+                    <p class="text-2xl mb-5">
+                        Programming is an art form that fights back. Well-written code should be beautiful, simple, and
+                        clear. It should read like a good book, where each line logically follows the next, and even
+                        complex algorithms appear effortless and elegant.
+                    </p>
+                    <div class="flex items-center text-xs font-jet">
+                        <span>By <span class="text-[#F95341] underline">Gonzalo Hirsch</span></span>
+                        <div class="w-1.5 h-1.5 rounded-full bg-[#7843FF] opacity-40 mx-3"></div>
+                        <span>Full-stack Developer</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-16">
+                <div class="mb-6">
+                    <h3 class="text-[44px] leading-[110%] mb-4">Instructions</h3>
+                </div>
+                <div class="mb-6">
+                    <div class="flex mb-4 text-[32px] leading-[110%]">
+                        <span class="mr-3">1.</span>
+                        <span>Code Formatting</span>
+                    </div>
+                    <p class="text-lg">
+                        Begin by reviewing the formatting of the code. Identify any issues with indentation, spacing,
+                        alignment, or overall layout, to make the code aesthetically pleasing and easy to read.
+                    </p>
+                </div>
+                <div class="mb-6">
+                    <div class="flex mb-4 text-[32px] leading-[110%]">
+                        <span class="mr-3">2.</span>
+                        <span>Code Correctness</span>
+                    </div>
+                    <p class="text-lg">
+                        Next, focus on the correctness of the code. Check for any coding errors or typos, ensure that
+                        the code is syntactically correct and functional.
+                    </p>
+                </div>
+                <div class="mb-6">
+                    <div class="flex mb-4 text-[32px] leading-[110%]">
+                        <span class="mr-3">3.</span>
+                        <span>Code Analysis</span>
+                    </div>
+                    <p class="text-lg">
+                        Finally, conduct a higher-level analysis of the code. Look for ways to improve error handling,
+                        manage corner cases, as well as making the code more robust, efficient, and maintainable.
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <div class="pb-6 border-b-[1px] border-b-[rgba(120,67,255,0.1)] mb-6">
+                    <div class="bg-[#F9F9FF] rounded-2xl p-6 flex justify-between">
+                        <img src="assets/images/article-person.png" alt="" class="size-[52px] rounded-lg object-cover">
+                        <div class="w-[calc(100%-52px-24px)]">
+                            <div class="flex items-center text-xs font-jet mb-3">
+                                <span>By <span class="text-[#F95341] underline">Gonzalo Hirsch</span></span>
+                                <div class="w-1.5 h-1.5 rounded-full bg-[#7843FF] opacity-40 mx-3"></div>
+                                <span>Full-stack Developer</span>
+                            </div>
+                            <p class="text-sm mb-4">
+                                Gonzalo is a full-stack developer and expert in secure implementations focused on
+                                JavaScript
+                                and Node.js. He specializes in solutions for startup companies in finance and education,
+                                and
+                                has a master's degree in software engineering from the Instituto Tenológico de Buenos
+                                Aires.
+                            </p>
+                            <div class="flex items-center text-xs font-jet">
+                                <span>JSON</span>
+                                <div class="w-1.5 h-1.5 rounded-full bg-[#7843FF] opacity-40 mx-3"></div>
+                                <span>Node.js</span>
+                                <div class="w-1.5 h-1.5 rounded-full bg-[#7843FF] opacity-40 mx-3"></div>
+                                <span>Security Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center flex-wrap">
+                        <a href="#"
+                            class="size-11 rounded-lg border-[1px] border-[rgba(120,67,255,0.2)] flex items-center justify-center mr-3">
+                            <img src="assets/images/copy-link-purple.svg" alt="">
+                        </a>
+                        <a href="#"
+                            class="size-11 rounded-lg border-[1px] border-[rgba(120,67,255,0.2)] flex items-center justify-center mr-3">
+                            <img src="assets/images/linkedin-purple.svg" alt="">
+                        </a>
+                        <a href="#"
+                            class="size-11 rounded-lg border-[1px] border-[rgba(120,67,255,0.2)] flex items-center justify-center mr-3">
+                            <img src="assets/images/twitter-purple.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="flex items-center text-xs font-jet">
+                        <span>June 26, 2023</span>
+                        <div class="w-1.5 h-1.5 rounded-full bg-[#7843FF] opacity-40 mx-3"></div>
+                        <span>8 mins</span>
+                        <div class="w-1.5 h-1.5 rounded-full bg-[#7843FF] opacity-40 mx-3"></div>
+                        <div class="flex items-center">
+                            <img src="assets/images/arrow-down-green.svg" alt="">
+                            <span class="text-sm text-[#0AC655] ml-1">Mobile</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-[calc(100%-32px)] p-20 rounded-2xl mx-auto bg-[#F9F9FF] mb-3">
+        <h2 class="font-clash text-[64px] text-[#09110A] mb-16">Read other articles by the author</h2>
+        <div class="flex justify-between mb-16">
+            <div class="w-[calc(100%/3-16px)]">
+                <img src="assets/images/blog1.png" alt="" class="w-full h-[248px] object-cover rounded-xl mb-4">
+                <div>
+                    <div class="flex items-center justify-between mb-2">
+                        <div class="flex items-center">
+                            <img src="assets/images/arrow-down-red.svg" alt="">
+                            <span class="text-sm text-[#F95341] ml-1">Back-end</span>
+                        </div>
+                        <span class="text-sm text-[#09110A]">8 mins</span>
+                    </div>
+                    <h3 class="font-clash text-2xl text-[#09110A] leading-[130%] mb-2">
+                        Architecting Effective Data Labeling Systems for Machine Learning
+                    </h3>
+                    <p class="font-clash text-[#09110A] leading-[140%] limitText2 mb-3">
+                        Learn how to design efficient data labeling systems to enhance your machine learning pipelines.
+                        This guide covers key strategies for managing and annotating data, ensuring high-quality
+                        training sets. Discover best practices for integrating automation, utilizing crowdsourcing, and
+                        maintaining consistency to improve model accuracy and performance.
+                    </p>
+                    <div class="flex items-center mb-4">
+                        <span class="text-xs text-[#09110A]">June 26, 2023</span>
+                        <div class="w-1.5 h-1.5 rounded-full bg-[#7843FF] opacity-40 mx-3"></div>
+                        <span class="text-xs text-[#09110A]">By <span class="underline">Mark Davis</span></span>
+                    </div>
+
+                    <a href="#" class="flex items-center">
+                        <span class="text-sm text-[#F95341] underline">Read More</span>
+                        <img src="assets/images/arrow-down-red.svg" alt="" class="rotate-180 ml-2 -scale-x-100">
+                    </a>
+                </div>
+            </div>
+            <div class="w-[calc(100%/3-16px)]">
+                <img src="assets/images/blog2.png" alt="" class="w-full h-[248px] object-cover rounded-xl mb-4">
+                <div>
+                    <div class="flex items-center justify-between mb-2">
+                        <div class="flex items-center">
+                            <img src="assets/images/arrow-down-purple.svg" alt="">
+                            <span class="text-sm text-[#7843FF] ml-1">Web Front-end</span>
+                        </div>
+                        <span class="text-sm text-[#09110A]">8 mins</span>
+                    </div>
+                    <h3 class="font-clash text-2xl text-[#09110A] leading-[130%] mb-2">
+                        Theory, Tools, and Business Applications: An In-depth Look at Quantum Computing
+                    </h3>
+                    <p class="font-clash text-[#09110A] leading-[140%] limitText2 mb-3">
+                        Learn how to design efficient data labeling systems to enhance your machine learning pipelines.
+                        This guide covers key strategies for managing and annotating data, ensuring high-quality
+                        training sets. Discover best practices for integrating automation, utilizing crowdsourcing, and
+                        maintaining consistency to improve model accuracy and performance.
+                    </p>
+                    <div class="flex items-center mb-4">
+                        <span class="text-xs text-[#09110A]">June 26, 2023</span>
+                        <div class="w-1.5 h-1.5 rounded-full bg-[#7843FF] opacity-40 mx-3"></div>
+                        <span class="text-xs text-[#09110A]">By <span class="underline">Mark Davis</span></span>
+                    </div>
+
+                    <a href="#" class="flex items-center">
+                        <span class="text-sm text-[#F95341] underline">Read More</span>
+                        <img src="assets/images/arrow-down-red.svg" alt="" class="rotate-180 ml-2 -scale-x-100">
+                    </a>
+                </div>
+            </div>
+            <div class="w-[calc(100%/3-16px)]">
+                <img src="assets/images/blog3.png" alt="" class="w-full h-[248px] object-cover rounded-xl mb-4">
+                <div>
+                    <div class="flex items-center justify-between mb-2">
+                        <div class="flex items-center">
+                            <img src="assets/images/arrow-down-green.svg" alt="">
+                            <span class="text-sm text-[#0AC655] ml-1">Mobile</span>
+                        </div>
+                        <span class="text-sm text-[#09110A]">8 mins</span>
+                    </div>
+                    <h3 class="font-clash text-2xl text-[#09110A] leading-[130%] mb-2">
+                        How to Use JWT and Node.js for Better App Security
+                    </h3>
+                    <p class="font-clash text-[#09110A] leading-[140%] limitText2 mb-3">
+                        Learn how to design efficient data labeling systems to enhance your machine learning pipelines.
+                        This guide covers key strategies for managing and annotating data, ensuring high-quality
+                        training sets. Discover best practices for integrating automation, utilizing crowdsourcing, and
+                        maintaining consistency to improve model accuracy and performance.
+                    </p>
+                    <div class="flex items-center mb-4">
+                        <span class="text-xs text-[#09110A]">June 26, 2023</span>
+                        <div class="w-1.5 h-1.5 rounded-full bg-[#7843FF] opacity-40 mx-3"></div>
+                        <span class="text-xs text-[#09110A]">By <span class="underline">Mark Davis</span></span>
+                    </div>
+
+                    <a href="#" class="flex items-center">
+                        <span class="text-sm text-[#F95341] underline">Read More</span>
+                        <img src="assets/images/arrow-down-red.svg" alt="" class="rotate-180 ml-2 -scale-x-100">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <button class="py-3.5 px-4 bg-[#F95341] text-lg text-white flex items-center rounded-lg mx-auto">
+            <span>All News</span>
+            <img src="assets/images/arrow-up-white.svg" alt="" class="ml-2">
+        </button>
+    </section>
+
+    <section class="w-[calc(100%-32px)] px-20 py-16 rounded-2xl mx-auto bg-[#7843FF] mb-3 relative overflow-hidden">
+        <img src="assets/images/reduce-time-bg.svg" alt="" class="h-full absolute top-0 right-0">
+        <div class="flex items-end justify-between relative">
+            <h2 class="max-w-[850px] font-clash text-[64px] text-white leading-[100%]">
+                Reduce development time and <span
+                    class="inline-block bg-[rgba(255,255,255,0.05)] border-[1px] border-white px-2">minimize
+                    risks</span> with our decade-long expertise
+            </h2>
+            <div class="pl-4">
+                <button class="text-lg text-white py-3.5 px-4 bg-[#F95341] rounded-lg flex items-center">
+                    <span>View Products</span>
+                    <img src="assets/images/arrow-up-white.svg" alt="" class="ml-2">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#09110A] w-[calc(100%-32px)] rounded-2xl mx-auto mb-3 relative">
+        <div class="p-20 flex justify-between border-b-[1px] border-b-[rgba(255,255,255,0.1)]">
+            <div class="w-[256px]">
+                <img src="assets/images/logo-red.svg" alt="" class="mb-[184px]">
+                <p class="font-clash text-lg text-white">
+                    Strong foundations for your unlimited growth
+                </p>
+            </div>
+            <div class="w-[calc(100%-256px-21%)] flex justify-between">
+                <div>
+                    <h3 class="font-clash text-lg text-white mb-6">Navigation</h3>
+                    <ul class="font-clash text-sm text-white">
+                        <li class="mb-3">
+                            <a href="#">About Us</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#">Products</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#">FAQs</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#">Success Stories</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-clash text-lg text-white mb-6">Products</h3>
+                    <ul class="font-clash text-sm text-white">
+                        <li class="mb-3">
+                            <a href="#">Dev Maintenance</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#">Dev product</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#">CTO On-demand</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-clash text-lg text-white mb-6">Contact Us</h3>
+                    <ul class="font-clash text-sm text-white mb-6">
+                        <li class="mb-3">
+                            contacto@bonzzay.com
+                        </li>
+                        <li class="mb-3">
+                            +915789876789
+                        </li>
+                        <li class="mb-3 flex items-end">
+                            <span>C/Irún 23 1-2 <br> Madrid, C.P. 28008</span>
+                            <img src="assets/images/arrow-down-green.svg" alt="" class="ml-1">
+                        </li>
+                        <li class="mb-3 text-[rgba(255,255,255,0.6)]">
+                            Monday to Friday
+                        </li>
+                        <li class="mb-3 text-[rgba(255,255,255,0.6)]">
+                            9:00AM - 5:00PM (EST)&nbsp;
+                        </li>
+                    </ul>
+                    <div class="flex items-center">
+                        <a href="#" class="mr-3">
+                            <img src="assets/images/twitter-white-logo.svg" alt="">
+                        </a>
+                        <a href="#" class="mr-3">
+                            <img src="assets/images/instagram-white-logo.svg" alt="">
+                        </a>
+                        <a href="#" class="mr-3">
+                            <img src="assets/images/linkedin-white-logo.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-clash text-lg text-white mb-6">Listen On</h3>
+                    <ul class="font-clash text-sm text-white">
+                        <li class="mb-3 py-3.5 px-4 rounded-lg border-[1px] border-[rgba(255,255,255,0.1)]">
+                            <img src="assets/images/Spotify-full.svg" alt="">
+                        </li>
+                        <li class="mb-3 py-3.5 px-4 rounded-lg border-[1px] border-[rgba(255,255,255,0.1)]">
+                            <img src="assets/images/Google-Podcast-full.svg" alt="">
+                        </li>
+                        <li class="mb-3 py-3.5 px-4 rounded-lg border-[1px] border-[rgba(255,255,255,0.1)]">
+                            <img src="assets/images/Youtube-full.svg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-6 px-20 flex items-center justify-between font-clash text-sm text-[rgba(255,255,255,0.6)]">
+            <p>© 2024 Bonzzay Desarrollo web S.L. All rights reserved.</p>
+            <div class="flex items-center">
+                <a href="#" class="mx-3">Terms &amp; conditions</a>
+                <a href="#" class="mx-3">Privacy policy</a>
+                <a href="#" class="mx-3">Cookies policy</a>
+            </div>
+            <div class="flex items-center">
+                <span>Designed by</span>
+                <img src="assets/images/Affarts_Logo.svg" alt="" class="ml-3">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
