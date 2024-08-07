@@ -23,7 +23,7 @@ const revealBoxes = document.querySelectorAll(".revealBox");
 revealBoxes.forEach((box, i) => {
     timeline.fromTo(box,
         { y: 600, opacity: 1, scrub: 0.1, stagger: 0.5, },
-        { y: -window.innerHeight + 200, opacity: 1, duration: 8, ease: 'power1.inOut' },
+        { y: -window.innerHeight - 600, opacity: 1, duration: 8, ease: 'power1.inOut' },
         i * 2
     );
 });
